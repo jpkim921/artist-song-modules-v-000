@@ -30,6 +30,7 @@ class Song
     name.downcase.gsub(' ', '-')
   end
 
+  # counts all artists in @@artists
   def self.count
     self.all.count
   end
