@@ -26,7 +26,6 @@ class Artist
     @@artists
   end
 
-
   # adds song to has many songs array and also creates belongs to association to song's artist
   def add_song(song)
     @songs << song
