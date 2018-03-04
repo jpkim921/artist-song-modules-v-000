@@ -12,7 +12,7 @@ class Artist
     @@artists.detect{|a| a.name == name}
   end
 
-  # class initialize adding itself into the class variable
+  # initializes adding itself into the class variable and creating an array to hold the has many songs
   def initialize
     @@artists << self
     @songs = []
