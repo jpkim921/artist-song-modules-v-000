@@ -7,15 +7,15 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
-  @@songs = []
+  @@collection = []
 
   def initialize
-    @@songs << self
+    @@collection << self
   end
 
   # class method to find a particular song by name in the class variable
   def self.find_by_name(name)
-    @@songs.detect{|a| a.name == name}
+    @@collection.detect{|a| a.name == name}
   end
 
   # assign artist to song. ie create the belongs to relationship
@@ -28,8 +28,8 @@ class Song
     name.downcase.gsub(' ', '-')
   end
 
-  # reader method to read @@songs
+  # reader method to read @@collection
   def self.all
-    @@songs
+    @@collection
   end
 end
