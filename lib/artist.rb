@@ -18,7 +18,7 @@ class Artist
     @songs = []
   end
 
-  # reader method to read the class variable holding all artsts
+  # reader method to read @@artists
   def self.all
     @@artists
   end
