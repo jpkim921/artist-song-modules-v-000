@@ -10,6 +10,7 @@ class Song
     @@songs << self
   end
 
+  # class method to find a particular song by name in the class variable
   def self.find_by_name(name)
     @@songs.detect{|a| a.name == name}
   end
