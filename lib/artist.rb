@@ -23,7 +23,7 @@ class Artist
     @@artists
   end
 
-  # resets all artists in class variable that holds all artists
+  # resets all artists in @@artists
   def self.reset_all
     self.all.clear
   end
