@@ -13,7 +13,6 @@ class Artist
   end
 
   # class initialize adding itself into the class variable
-
   def initialize
     @@artists << self
     @songs = []
