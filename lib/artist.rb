@@ -4,7 +4,7 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  # where all has many songs will be held
+  # where all artist class will be held
   @@artists = []
 
   # class method to find a particular artist by name in the class variable
@@ -13,7 +13,7 @@ class Artist
   end
 
   # class initialize adding itself into the class variable
-  
+
   def initialize
     @@artists << self
     @songs = []
