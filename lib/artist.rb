@@ -28,6 +28,7 @@ class Artist
     self.all.clear
   end
 
+  # counts all artists in @@artists
   def self.count
     @@artists.count
   end
