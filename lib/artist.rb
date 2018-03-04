@@ -44,7 +44,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-  # replaces a space with a hyphen
+  # replaces a space with a hyphen within a name
   def to_param
     name.downcase.gsub(' ', '-')
   end
