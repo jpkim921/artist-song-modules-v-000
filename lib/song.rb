@@ -15,6 +15,7 @@ class Song
     @@songs.detect{|a| a.name == name}
   end
 
+  # assign artist to song. ie create the belongs to relationship
   def artist=(artist)
     @artist = artist
   end
