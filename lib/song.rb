@@ -20,6 +20,7 @@ class Song
     @artist = artist
   end
 
+  # resets all artists in @@songs
   def self.reset_all
     @@songs.clear
   end
