@@ -8,22 +8,22 @@ class Artist
   attr_reader :songs
 
   # where all artist class will be held
-  @@artists = []
+  @@collection = []
 
   # class method to find a particular artist by name in the class variable
   def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
+    @@collection.detect{|a| a.name == name}
   end
 
   # initializes adding itself into the class variable and creating an array to hold the has many songs
   def initialize
-    @@artists << self
+    @@collection << self
     @songs = []
   end
 
-  # reader method to read @@artists
+  # reader method to read @@collection
   def self.all
-    @@artists
+    @@collection
   end
 
   # adds song to has many songs array and also creates belongs to association to song's artist
