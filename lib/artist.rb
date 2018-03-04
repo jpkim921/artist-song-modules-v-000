@@ -8,7 +8,7 @@ class Artist
   attr_reader :songs
 
   # where all artist class will be held
-  @@artists = []
+  @@collection = []
 
   # class method to find a particular artist by name in the class variable
   def self.find_by_name(name)
