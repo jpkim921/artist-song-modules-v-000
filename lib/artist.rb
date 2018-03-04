@@ -7,6 +7,7 @@ class Artist
   # where all has many songs will be held
   @@artists = []
 
+  # class method to find a particular artist by name
   def self.find_by_name(name)
     @@artists.detect{|a| a.name == name}
   end
