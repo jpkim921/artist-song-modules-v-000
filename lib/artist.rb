@@ -12,7 +12,7 @@ class Artist
 
   # class method to find a particular artist by name in the class variable
   def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
+    @@collection.detect{|a| a.name == name}
   end
 
   # initializes adding itself into the class variable and creating an array to hold the has many songs
