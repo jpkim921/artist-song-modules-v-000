@@ -26,14 +26,14 @@ class Song
   end
 
   # resets all artists in @@songs
-  def self.reset_all
-    @@songs.clear
-  end
+  # def self.reset_all
+  #   @@songs.clear
+  # end
 
   # counts all artists in @@songs
-  def self.count
-    self.all.count
-  end
+  # def self.count
+  #   self.all.count
+  # end
 
   # reader method to read @@songs
   def self.all
