@@ -16,6 +16,7 @@ class Song
   # class method to find a particular song by name in the class variable
   def self.find_by_name(name)
     @@songs.detect{|a| a.name == name}
+    @@artists.detect{|a| a.name == name}
   end
 
   # assign artist to song. ie create the belongs to relationship
