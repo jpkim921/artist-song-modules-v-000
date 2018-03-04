@@ -20,17 +20,16 @@ class Song
     @artist = artist
   end
 
-
   # replaces a space with a hyphen within a name
   def to_param
     name.downcase.gsub(' ', '-')
   end
-  
+
   # resets all artists in @@songs
   def self.reset_all
     @@songs.clear
   end
-    
+
   # counts all artists in @@songs
   def self.count
     self.all.count
