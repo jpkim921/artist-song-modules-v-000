@@ -25,6 +25,7 @@ class Song
     @@songs.clear
   end
 
+  # replaces a space with a hyphen within a name
   def to_param
     name.downcase.gsub(' ', '-')
   end
