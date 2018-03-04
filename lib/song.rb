@@ -7,10 +7,10 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
-  @@songs = []
+  @@collection = []
 
   def initialize
-    @@songs << self
+    @@collection << self
   end
 
   # class method to find a particular song by name in the class variable
