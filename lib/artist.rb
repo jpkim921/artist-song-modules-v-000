@@ -34,8 +34,8 @@ class Artist
   end
 
   # replaces a space with a hyphen within a name
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+  # def to_param
+  #   name.downcase.gsub(' ', '-')
+  # end
 
 end
