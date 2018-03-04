@@ -12,9 +12,9 @@ class Song
 
   @@songs = []
 
-  def initialize
-    # @@songs << self
-  end
+  # def initialize
+  #   @@songs << self
+  # end
 
 # assign artist to song. ie create the belongs to relationship
   def artist=(artist)
