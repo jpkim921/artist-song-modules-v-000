@@ -24,14 +24,14 @@ class Artist
   end
 
   # resets all artists in @@artists
-  def self.reset_all
-    self.all.clear
-  end
+  # def self.reset_all
+  #   self.all.clear
+  # end
 
   # counts all artists in @@artists
-  def self.count
-    @@artists.count
-  end
+  # def self.count
+  #   @@artists.count
+  # end
 
   # adds song to has many songs array and also creates belongs to association to song's artist
   def add_song(song)
