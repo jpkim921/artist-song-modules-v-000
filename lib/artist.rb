@@ -15,6 +15,7 @@ class Artist
   # initializes adding itself into the class variable and creating an array to hold the has many songs
   def initialize
     # @@artists << self
+    super
     @songs = []
   end
 
