@@ -39,11 +39,12 @@ class Artist
     song.artist = self
   end
 
-  # take an array of songs and adds each and all songs to the artist
+  # takes an array of songs and adds each and all songs to the artist
   def add_songs(songs)
     songs.each { |song| add_song(song) }
   end
 
+  # replaces a space with a hyphen
   def to_param
     name.downcase.gsub(' ', '-')
   end
