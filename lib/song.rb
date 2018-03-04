@@ -19,13 +19,15 @@ class Song
     @artist = artist
   end
 
+  # reader method to read @@songs
+  def self.all
+    @@songs
+  end
+  
   # replaces a space with a hyphen within a name
   def to_param
     name.downcase.gsub(' ', '-')
   end
 
-  # reader method to read @@songs
-  def self.all
-    @@songs
-  end
+
 end
