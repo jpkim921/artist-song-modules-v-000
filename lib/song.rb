@@ -35,6 +35,7 @@ class Song
     self.all.count
   end
 
+  # reader method to read the class variable holding all artsts
   def self.all
     @@songs
   end
